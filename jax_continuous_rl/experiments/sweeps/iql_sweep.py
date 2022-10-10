@@ -8,8 +8,7 @@ slurm_name = 'iql_sweep'
 grid = {
     "name": ['iql'],
     "config": ['configs/iql_default.py'],
-    "env_name": ['pen-cloned-v1', 'pen-expert-v1', 'hammer-human-v1', 'hammer-cloned-v1', 'hammer-expert-v1'],
-    #[ 'pen-human-v1'], # 'halfcheetah-medium-replay-v2', 'antmaze-umaze-v2', 'antmaze-medium-play-v2',
+    "env_name": ['pen-cloned-v1', 'pen-expert-v1', 'pen-human-v1', 'halfcheetah-medium-replay-v2', 'antmaze-umaze-v2', 'antmaze-medium-play-v2', 'antmaze-large-play-v2'],
     
     "config.hidden_dims": [(256,256)],
     "config.actor_lr": [0.0003],
@@ -23,11 +22,10 @@ grid = {
 # grid = {
 #     "name": ['iql'],
 #     "config": ['configs/iql_default.py'],
-#     "env_name": [ 'point_mass-stitch-easy', 'point_mass-stitch-stitch',],
-#     # 'point_mass-ring_of_fire-offset'],
-#         #'point_mass-stitch-easy', 'point_mass-stitch-stitch'],
-#     #                 'point_mass-open-offset', 'point_mass-dense-offset',
-#     #                 'point_mass-wideinit-normal', 'point_mass-widedense-normal'],
+#     "env_name": ['point_mass-stitch-easy', 'point_mass-stitch-stitch',
+#                       'point_mass-ring_of_fire-offset',
+#                       'point_mass-open-offset', 'point_mass-dense-offset',
+#                       'point_mass-wideinit-normal','point_mass-widedense-normal'],
 #     "dataset_name": ['mine'],
     
 #     "config.hidden_dims": [(256,256)],

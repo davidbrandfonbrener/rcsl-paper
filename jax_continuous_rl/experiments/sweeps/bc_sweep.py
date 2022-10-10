@@ -7,12 +7,11 @@ slurm_name = 'bc_sweep'
 
 grid = {
     "name": ['bc'],
-    "env_name": ['pen-cloned-v1', 'pen-expert-v1', 'hammer-human-v1', 'hammer-cloned-v1', 'hammer-expert-v1'],
-    #['halfcheetah-medium-replay-v2', 'antmaze-umaze-v2', 'antmaze-medium-play-v2', 'pen-human-v1'],
+    "env_name": ['pen-cloned-v1', 'pen-expert-v1', 'pen-human-v1', 'halfcheetah-medium-replay-v2', 'antmaze-umaze-v2', 'antmaze-medium-play-v2', 'antmaze-large-play-v2'],
 
     "percentile": [100.0, 50.0, 10.0, 2.0],
     
-    "config.hidden_dims": [(256,256)], # (1024,1024), 
+    "config.hidden_dims": [(256,256)],
     "config.actor_lr": [0.001],
     
     "seed": [0,1,2],
@@ -23,11 +22,10 @@ grid = {
 #     "name": ['bc'],
 
 #     "percentile": [100.0, 50.0, 10.0, 2.0],
-#     "env_name": [ 'point_mass-stitch-easy', 'point_mass-stitch-stitch',],
-#     #'point_mass-ring_of_fire-offset'],
-#         #'point_mass-stitch-easy', 'point_mass-stitch-stitch'],
-#     #                 'point_mass-open-offset', 'point_mass-dense-offset',
-#     #                 'point_mass-wideinit-normal','point_mass-widedense-normal'],
+#     "env_name": ['point_mass-stitch-easy', 'point_mass-stitch-stitch',
+#                       'point_mass-ring_of_fire-offset',
+#                       'point_mass-open-offset', 'point_mass-dense-offset',
+#                       'point_mass-wideinit-normal','point_mass-widedense-normal'],
 #     "dataset_name": ['mine'],
     
 #     "config.hidden_dims": [(256,256)],

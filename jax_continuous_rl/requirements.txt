@@ -14,3 +14,4 @@ tensorflow-probability >= 0.15.0
 imageio >= 2.9.0
 imageio-ffmpeg >= 0.4.3
 d4rl @ git+https://github.com/rail-berkeley/d4rl@master#egg=d4rl
+fire
