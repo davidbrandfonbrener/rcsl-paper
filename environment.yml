@@ -1,0 +1,9 @@
+name: rcsl-paper
+channels:
+  - defaults
+dependencies:
+  - python=3.9
+  - pip
+  - pip:
+      - -r jax_continuous_rl/requirements.txt
+      - -r decision-transformer/requirements.txt
