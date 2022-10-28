@@ -108,18 +108,6 @@ def main(_):
                       env.observation_space.sample()[np.newaxis],
                       np.array([[0.0]]),
                       env.action_space.sample()[np.newaxis], **kwargs)
-    elif FLAGS.name == 'gen_rvs':
-        agent = agents.GenRvsLearner(FLAGS.seed,
-                      env.observation_space.sample()[np.newaxis],
-                      env.action_space.sample()[np.newaxis], **kwargs)
-    elif FLAGS.name == 'joint_rvs':
-        agent = agents.JointRvsLearner(FLAGS.seed,
-                      env.observation_space.sample()[np.newaxis],
-                      env.action_space.sample()[np.newaxis], 
-                      n_bins=11, 
-                      v_min=np.min(dataset.outcomes),
-                      v_max=np.max(dataset.outcomes),
-                      **kwargs)
     else:
         raise NotImplementedError
 
